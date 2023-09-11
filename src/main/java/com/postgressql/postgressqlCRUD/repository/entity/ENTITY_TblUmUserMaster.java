@@ -1,14 +1,20 @@
 package com.postgressql.postgressqlCRUD.repository.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.sql.Date;
 import java.util.Arrays;
 import java.util.Collection;
 
 @Entity
+@Data
 @Table(name = "TBL_UM_USER_MASTER", schema = "dbo", catalog = "master")
 public class ENTITY_TblUmUserMaster {
+
     @Basic
     @Column(name = "RECID", nullable = false, precision = 0)
     private int recid;
